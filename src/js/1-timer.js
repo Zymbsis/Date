@@ -24,12 +24,12 @@ const options = {
         messageSize: 16,
         message: 'Please choose a date in the future ',
         position: 'topRight',
-        iconUrl: '../img/bi_x-octagon (1).svg',
+        iconUrl: './img/bi_x-octagon.svg',
         close: false,
         timeout: 60000,
         buttons: [
           [
-            '<button type="button" style="background-color: #EF4040"><img src="../img/bi_x-lg.svg"></button>',
+            '<button type="button" style="background-color: #EF4040"><img src="./img/bi_x-lg.svg"></button>',
           ],
         ],
       });
