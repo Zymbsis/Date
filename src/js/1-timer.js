@@ -26,6 +26,7 @@ const options = {
         position: 'topRight',
         iconUrl: '../img/bi_x-octagon (1).svg',
         close: false,
+        timeout: 100000000,
         buttons: [
           [
             '<button type="button" style="background-color: #EF4040"><img src="../img/bi_x-lg.svg"></button>',
