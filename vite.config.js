@@ -23,7 +23,6 @@ export default defineConfig(({ command }) => {
           },
           entryFileNames: 'commonHelpers.js',
         },
-        external: 'izitoast',
       },
       outDir: '../dist',
     },
