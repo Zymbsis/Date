@@ -4,6 +4,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import firstIcon from '../img/bi_x-octagon.svg';
 
 const button = document.querySelector('[data-start]');
 let userSelectedDate;
@@ -24,7 +25,7 @@ const options = {
         messageSize: 16,
         message: 'Please choose a date in the future ',
         position: 'topRight',
-        iconUrl: '../img/bi_x-octagon.svg',
+        iconUrl: firstIcon,
         close: false,
         timeout: 60000,
         buttons: [
