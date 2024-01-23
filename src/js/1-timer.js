@@ -24,7 +24,7 @@ const options = {
         messageSize: 16,
         message: 'Please choose a date in the future ',
         position: 'topRight',
-        iconUrl: './img/bi_x-octagon.svg',
+        iconUrl: '../img/Oleksii.jpg',
         close: false,
         timeout: 60000,
         buttons: [
