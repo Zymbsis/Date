@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers2.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers2.js","sources":["../src/js/2-snackbar.js"],"sourcesContent":["const newEl = document.createElement('img');\nconsole.log(newEl);\nnewEl.src = '../img/Oleksii.jpg';\n"],"names":["newEl"],"mappings":"wFAAA,MAAMA,EAAQ,SAAS,cAAc,KAAK,EAC1C,QAAQ,IAAIA,CAAK,EACjBA,EAAM,IAAM"}
