@@ -3,7 +3,7 @@ import flatpickr from 'flatpickr';
 // Додатковий імпорт стилів
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
-// import 'izitoast/dist/css/izitoast.css';
+import 'izitoast/dist/css/izitoast.css';
 
 const button = document.querySelector('[data-start]');
 let userSelectedDate;
