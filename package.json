@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/Date/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "love": "echo Lyosha, I love you! You are my soul mate",
+    "push": "git add . && git commit -m 'update' && git push"
   },
   "devDependencies": {
     "glob": "^8.1.0",

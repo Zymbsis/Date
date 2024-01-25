@@ -42,25 +42,33 @@ img {
   margin: 0 auto;
 }
 
-#datetime-picker {
+input {
   width: 272px;
-  height: 40px;
+  padding: 7px 17px;
   border-radius: 4px;
   border: 1px solid #808080;
   outline: transparent;
-  color: #2E2F42;
+  background-color: #fafafa;
+  color: #808080;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   margin-bottom: 32px;
 }
 
-#datetime-picker:hover {
-  border-color: #000;
+.input-active {
+  border-color: #4E75FF;
+  background-color: #fff;
+  color: #000;
 }
 
-#datetime-picker:active {
-  border-color: #4E75FF;
+.input-normal {
+  border-color: #808080;
+  color: #2E2F42;
+}
+
+.input-normal:hover {
+  border-color: #000;
 }
 
 [data-start] {
