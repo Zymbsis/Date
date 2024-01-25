@@ -12,7 +12,6 @@ const remainingHours = document.querySelector('[data-hours]');
 const remainingMinutes = document.querySelector('[data-minutes]');
 const remainingSeconds = document.querySelector('[data-seconds]');
 let userSelectedDate;
-let currentDate;
 let remainder;
 let setIntervalId;
 let resultOfConvertMs;
@@ -76,8 +75,8 @@ const options = {
     console.log(selectedDates[0]);
     clearInterval(setIntervalId);
     userSelectedDate = selectedDates[0];
-    currentDate = new Date();
-    remainder = userSelectedDate - currentDate;
+
+    remainder = userSelectedDate - new Date();
     resetTimer.createTimer();
 
     if (remainder < 1000) {
@@ -109,11 +108,14 @@ function convertMs(ms) {
 function onButtonClick() {
   input.classList.remove('input-normal', 'input-active');
   button.classList.remove('active-button');
-  const currentDate = new Date();
-  remainder = userSelectedDate - currentDate;
+  remainder = userSelectedDate - new Date();
+  console.log(remainder);
 
   if (remainder >= 1000) {
     setIntervalId = setInterval(() => {
+      if (remainder < 1000) {
+        clearInterval(setIntervalId);
+      }
       resultOfConvertMs = convertMs(remainder);
       startTimer.setTimer(resultOfConvertMs);
       startTimer.createTimer();
