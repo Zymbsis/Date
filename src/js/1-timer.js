@@ -107,6 +107,7 @@ function convertMs(ms) {
 }
 
 function onButtonClick() {
+  input.classList.remove('input-normal', 'input-active');
   button.classList.remove('active-button');
   const currentDate = new Date();
   remainder = userSelectedDate - currentDate;
