@@ -42,7 +42,7 @@ img {
   margin: 0 auto;
 }
 
-input {
+.container > input {
   width: 272px;
   padding: 7px 17px;
   border-radius: 4px;
@@ -116,4 +116,91 @@ input {
 
 .active-button:hover {
   background-color: #6C8CFF;
+}
+
+.form {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  padding: 12px 24px;
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  outline: transparent;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover {
+  border-color: #000;
+}
+
+.form-input:focus {
+  border-color: #4E75FF;
+}
+
+fieldset {
+  padding-top: 28px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 24px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+fieldset legend {
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+fieldset:hover {
+  border-color: #000;
+}
+
+fieldset label {
+  display: flex;
+  gap: 8px;
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+fieldset input {
+  width: 19px;
+  height: 19px;
+}
+
+form button {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #4E75FF;
+  border: none;
+  padding: 8px 0;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form button:hover {
+  background-color: #6C8CFF;
+  ;
 }
