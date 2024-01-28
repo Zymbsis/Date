@@ -18,12 +18,38 @@
     />
     
     <title>Document</title>
-    <link rel="stylesheet" href="/Date/assets/styles-70c010de.css">
+    <script type="module" crossorigin src="/Date/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/Date/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/Date/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/Date/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/Date/assets/styles-41782784.css">
   </head>
   <body>
     <header>
       <a href="index.html">Home</a>
     </header>
-    <!-- <script type="module" src="js/2-snackbar.js"></script> -->
+    <main>
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </main>
+    
   </body>
 </html>
